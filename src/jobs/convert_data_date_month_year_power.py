@@ -16,5 +16,5 @@ if __name__=='__main__':
     data['month']  = data['date'].apply(getMonth)
     data['day'] = data['date'].apply(getDay)
     data['year'] = data['date'].apply(getYear)
-    data = data[['day', 'month', 'year', 'temp']]
-    data.to_csv('../../utils/data/month_day_year_temp.csv')
+    data = data[['day', 'month', 'year', 'holiday','temp', 'increase', 'power']]
+    data.to_csv('../utils/data/power/month_day_year_temp_increase_power.csv')
